@@ -1,0 +1,41 @@
+11
+
+SELECT Customers.Contact Name as Customers_Name from Customers 
+INNER JOIN Orders 
+on Customers.ID=Orders.Customer_ID;
+
+
+12
+
+SELECT Customer_ID, Avg(Gross Total) 
+FROM Orders
+Group By Customer_ID;
+
+13
+
+UPDATE Customers SET City="Mumbai"
+Where
+City="Delhi";
+
+14
+
+DELETE Table Logs
+where
+Year(curdate())-Year(Datetime)>1;
+
+15
+SELECT * From Employees
+Order By Salary Desc
+Limit 5;
+
+16
+
+SELECT Customers.Contact Name as Customers_Name from Customers 
+INNER JOIN Orders 
+on Customers.ID=Orders.Customer_ID
+Group By Customers.ID
+Order By Orders.No of Items
+Limit 3;
+
+
+
